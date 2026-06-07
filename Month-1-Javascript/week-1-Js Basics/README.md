@@ -50,6 +50,12 @@ Built a command-line number guessing game where users attempts to guess a random
 - User Input
 - Random Number Generation 
 
+### Challenged Faced 
+
+- Deciding when the game should stop running 
+- Tracking the number attempt 
+- Structuring the game flow without getting lost in logic 
+
 ### Key Learnings
 
 - Using loops to control game flow

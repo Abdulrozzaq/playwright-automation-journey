@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title> Guessing number </title>
+ </head>
+
+<body>
+
+    <h1>My guessing game </h1>
+
+    <p> Game will pop up automatically!</p>
+
+    <script>
+
+    const secretNumber = Math.floor(Math.random() * 100) + 1;
+
+    let guess;
+    let count = 0;
+
+    while(secretNumber != guess){
+
+        guess = Number(prompt("Enter guess number: "))
+
+        count++;
+
+        if(guess == secretNumber){
+            console.log("correct")
+        }
+        else if (guess < secretNumber){
+            console.log("Too low")
+        }
+
+        else if (guess > secretNumber){
+            console.log("Too high")
+        }
+        else{
+            console.log("Input valid number")
+        }
+
+
+
+    }
+
+    </script>
+ 
+</body>
+
+</html>
+
+
+
+
+
+
+

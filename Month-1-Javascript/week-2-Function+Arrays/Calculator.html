@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title> Calculate numbers </title>
+    </head>
+    <body>
+        <h1>Calculate your data here!</h1>
+        <input id = "demo1"/>
+        <input id = "demo2"/>
+        <br>
+        <p>  </p>
+        <button id = "add">ADD</button>
+        <button id = "sub">SUB</button>
+        <button id = "mut">MUT</button>
+        <button id ="dvd">DVD</button>
+        <p id ="result">  </p>
+    </body>
+
+    <script>
+
+        document.getElementById("add").onclick = addnumber
+        document.getElementById("sub").onclick = subnumber
+        document.getElementById("mut").onclick = mutnumber
+        document.getElementById("dvd").onclick = dvdnumber
+
+        function addnumber(){
+
+            let a = document.getElementById("demo1").value
+            let b = document.getElementById("demo2").value
+
+
+            if (a ==="" || b === ""){
+                document.getElementById("result").innerHTML =
+                
+                 "Please Enter both number"
+                 return;
+            }
+
+            let res = Number(a)+Number(b);
+            document.getElementById("result").innerHTML= res
+
+            
+        
+        }
+
+        function subnumber(){
+
+            let a = document.getElementById("demo1").value
+            let b = document.getElementById("demo2").value
+
+             if (a ==="" || b === ""){
+                document.getElementById("result").innerHTML =
+                
+                 "Please Enter both number"
+                 return;
+            }
+
+            let res = number(a) - Number(b)
+            document.getElementById("result").innerHTML = res
+        }
+
+        function mutnumber(){
+            let a = document.getElementById("demo1").value
+            let b = document .getElementById("demo2").value
+
+             if (a ==="" || b === ""){
+                document.getElementById("result").innerHTML =
+                
+                 "Please Enter both number"
+                 return;
+            }
+
+            let res = Number(a) * Number(b)
+            document.getElementById("result").innerHTML = res
+        }
+
+
+        function dvdnumber(){
+            let a = document.getElementById("demo1").value
+            let b = document.getElementById("demo2").value
+             if (a ==="" || b === ""){
+                document.getElementById("result").innerHTML =
+                
+                 "Please Enter both number"
+                 return;
+            }
+               else if (Number(b)===0){
+                document.getElementById("result").innerHTML = 
+
+                "Cannot be divided"
+                return
+            }
+
+         
+
+            let res = Number(a) / Number(b)
+            document.getElementById("result").innerHTML = res
+        }
+
+
+    </script>
+
+
+</html>

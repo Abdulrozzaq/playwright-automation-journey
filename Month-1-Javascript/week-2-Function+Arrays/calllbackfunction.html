@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Callback Function </title>
+<body>
+
+    <h1>Javascript HTML event</h1>
+
+    <h2>Event Handler</h2>
+    <button id = "btn">click</button>
+    <p id = "demo"> </p>
+</body>
+
+<script>
+    function myfunction(){
+        document.getElementById("demo").innerHTML= Date();
+    }
+
+    document.getElementById("btn").addEventListener("click", myfunction);
+
+    
+</script>
+</head>
+</html>

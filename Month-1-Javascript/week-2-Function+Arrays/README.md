@@ -1,49 +1,127 @@
-# Week 2 - Functions and Arrays 
+# Week 2 - Functions, Arrays, and Data Transformation
 
-## Overview 
+## Overview
 
-This week focuses on understanding functions, code reusability and problem-solving with javascript.
+This week focused on writing reusable JavaScript code using functions and working with arrays and array methods to transform and process data.
 
-## Topics Covered So Far 
+The concepts learned this week are directly applicable to Playwright automation, where test data often needs to be filtered, transformed, validated, and prepared before use in automated tests.
 
-- Function declaration
-- Function invocation
-- Parameters and arguments
-- DOM interaction
-- Even handling
+## Topics Covered
 
-## Projected completed 
+* Function Declaration
+* Function Invocation
+* Parameters and Arguments
+* Return Values
+* DOM Interaction
+* Event Handling
+* Arrays
+* Array Methods
+* Data Transformation
+* Spread Operator
+* Object Manipulation
 
-### Calculator App
+## Projects Completed
 
-Built a simple calculator application that allows user to perform :
+### 1. Calculator App
 
-- Addition
-- Subtraction
-- Multiplication 
-- Division 
+Built a browser-based calculator that performs:
 
-### Skills Practiced 
+* Addition
+* Subtraction
+* Multiplication
+* Division
 
-- Defining function 
-- Calling function from button events
-- Reading user input from the DOM
-- Displaying results dynamically
-- Handling division by zero
+#### Skills Practiced
 
-### Key Learnings
+* Functions
+* Event Handling
+* User Input Processing
+* DOM Manipulation
+* Basic Validation
 
-- Function help organized the reuse code.
-- Event handler can trigger different function based on user action
-- User input from HTML element is received as string and may require conversion before calcultions.
-- Input validation is importnat to prevent unexpected behaviour
+#### Validation Scenarios Considered
 
-### Automation Relevance 
+* Positive numbers
+* Negative numbers
+* Decimal values
+* Empty inputs
+* Division by zero
 
-Function are a core building blockfor Playwright automation and will later be used for :
+---
 
-- Reusable helper method
-- Custom utilities 
-- Test data generation 
+### 2. Cleaning Raw API Test Data
+
+Built a data transformation exercise that processes raw API response data by:
+
+* Converting keys to camelCase
+* Extracting user full names
+* Filtering inactive accounts
+
+#### Skills Practiced
+
+* Array Methods
+* Object Manipulation
+* Data Transformation
+* Filtering Data
+* Mapping Data
+
+#### Automation Relevance
+
+Similar transformations are commonly required when preparing API response data for automated validation and reporting.
+
+---
+
+### 3. Aggregate E-Commerce Cart Totals
+
+Built a solution that transforms an array of shopping cart items and calculates:
+
+* Total item cost
+* Grand total
+* Flat 10% tax calculation
+
+#### Skills Practiced
+
+* Array Iteration
+* Data Aggregation
+* Business Logic Implementation
+* Numerical Calculations
+
+#### Automation Relevance
+
+Calculating expected totals and validating pricing logic are common activities in e-commerce test automation.
+
+## Key Learnings
+
+* Functions improve code organization and reusability.
+* Arrays provide a flexible way to manage collections of data.
+* Array methods simplify filtering, transforming, and aggregating information.
+* The spread operator makes copying and updating arrays and objects easier.
+* Data transformation is a critical skill for automation engineers working with APIs and test data.
+
+## Challenges Faced
+
+* Understanding when to use different array methods.
+* Choosing the correct method for filtering, transforming, or aggregating data.
+* Maintaining readable code while performing multiple transformations.
+* Debugging data structure changes during transformation processes.
+
+## Automation Relevance
+
+The skills learned this week will support future Playwright automation work, including:
+
+* Test data preparation
+* API response validation
+* Dynamic test data generation
+* Data-driven testing
+* Utility helper functions
+* Framework development
+
+## Next Week Focus
+
+* Objects
+* Advanced Array Methods
+* Destructuring
+* More Real-World Data Manipulation
+* JavaScript Problem Solving
 
 

@@ -8,6 +8,9 @@ const testUsers = [
 
 //**Transform testUsers into a new array containing only the active users who scored ≥ 50, and format their names to be lowercase. */
 
-const transform = testUsers.map((element) => (element.score >= 50));
+const transform = testUsers.filter((element) => (element.score >= 50 && element.active==true))
+.map((element) => ({
+    ...element,
+     name : element.name.toLowerCase()}));
 
-console.log(map(transform));
+console.log(transform);

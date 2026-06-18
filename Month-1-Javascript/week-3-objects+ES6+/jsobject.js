@@ -40,6 +40,13 @@ console.log(employee["race"]);
 let {name,job} = employee;
 
 for(x in employee){
-    console.log(x[employee]);
+
+    console.log(x  +  " "  + " " + " " + employee[x]);
 }
 
+//**Template literals */
+
+let pro = "John"
+
+console.log(`What is  ${pro} ${3+5} 
+doing in the car? `)

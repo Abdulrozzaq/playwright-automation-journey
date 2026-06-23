@@ -33,3 +33,22 @@ function multiply(mut,...arg){
 var ari = multiply(2,3,4,5)
 
 console.log(ari);
+
+//**Spread - expand array into separate element
+// Rest -  bundle sperate elements into and array */
+
+function add(...number){
+    let result = 0
+
+    for(nums of number){
+        
+        result += nums
+    }
+    return result;
+}
+
+let r = add(2,3,4,5,9)
+
+console.log(`your total is ${r}`);
+
+

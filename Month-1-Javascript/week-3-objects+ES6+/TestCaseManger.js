@@ -1,19 +1,28 @@
-function createTestCase(id,title,status,...steps){
+const testcase = {
+    id : "Tc-001",
+    title : "login",
+    steps : ["Enter email", "enter password", "click login button"],
+    status : "pending"
+}
+
+function createTestCase(id,title, status, ...steps){
     return {
         id,
         title,
         steps,
-        status: "Pending"
+        status
+    }
+};
+const test  =  createTestCase(
+    "Tc-001",
+    "Login test",
+    "status",
+    "Enter email",
+    "Enter password",
+    "click login"
+)
 
-    };
-}
-
-const test = createTestCase(
-"Tc-001",
-"login Test",
-"Enter Email",
-"Enter password",
-"Click login"
+console.log(...test,
+    status: "passed"
 );
 
-console.log(test);

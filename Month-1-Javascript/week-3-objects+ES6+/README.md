@@ -115,12 +115,61 @@ Spread and rest operators are useful when:
 * Combining configuration objects
 * Building reusable automation utilities
 
+---
+
+## Mini Project
+
+### Test Case as a JavaScript Object
+
+Modeled a software test case using a JavaScript object to represent real-world QA data in a structured format.
+
+#### Object Properties
+
+* Test Case ID
+* Test Case Title
+* Module
+* Preconditions
+* Test Steps
+* Expected Result
+* Actual Result
+* Test Status
+* Priority
+
+#### Skills Practiced
+
+* Object creation
+* Nested objects
+* Arrays within objects
+* Property access
+* Property updates
+* Object destructuring
+* Template literals
+
+#### Key Learnings
+
+* Objects provide a structured way to represent complex application and testing data.
+* Grouping related properties into a single object improves readability and maintainability.
+* Destructuring simplifies working with object properties.
+* Template literals make dynamic test execution messages easier to generate.
+
+#### Automation Relevance
+
+Modeling a test case as an object reflects how automation frameworks organize and manage test data. These concepts are commonly applied to:
+
+* Test data management
+* Page Object Model (POM)
+* API request and response objects
+* Test execution reporting
+* Data-driven testing
+* Configuration management
+
 ## Key Takeaways
 
 * Objects are the foundation of working with structured data in JavaScript.
 * Destructuring improves readability and reduces repetitive code.
 * Template literals make dynamic string generation easier.
 * Spread and rest operators provide powerful ways to work with arrays and objects.
+* Modeling real QA artifacts, such as test cases, using JavaScript objects bridges manual testing knowledge with automation development.
 * These concepts are directly applicable to Playwright automation, API testing, and framework development.
 
 ## Next Week Focus

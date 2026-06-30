@@ -19,10 +19,10 @@ const test  =  createTestCase(
     "status",
     "Enter email",
     "Enter password",
-    "click login"
+    "click login button"
 )
 
 console.log(...test,
-    status: "passed"
+    status = "passed"
 );
 

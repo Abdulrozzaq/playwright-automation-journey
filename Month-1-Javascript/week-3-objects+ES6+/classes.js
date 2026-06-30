@@ -1,7 +1,5 @@
 class Student  {
 
-
-
     constructor(id,name, grade, ...courses){
         this.id = id,
         this.name = name,

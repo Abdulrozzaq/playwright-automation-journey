@@ -15,7 +15,7 @@ class Car{
         this.name = x;
 
     }
-
+ 
 }
 
 

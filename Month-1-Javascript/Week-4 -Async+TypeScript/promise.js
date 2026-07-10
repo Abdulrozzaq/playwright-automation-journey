@@ -11,7 +11,26 @@ let myPromise = new Promise(function(resolve, reject) {
 });
 
 // Use the Promise
-myPromise.then(
-  function(value) {myDisplayer(value);},
-  function(value) {myDisplayer(value);}
-);
+//Promise.then(
+  //nction(value) {myDisplayer(value);},
+  //nction(value) {myDisplayer(value);}
+//
+
+
+
+const p = new Promise((resolve,reject) =>{
+    let a = 1+1 
+
+    if(a==2){
+        resolve('success')
+    }else{
+        reject('failed')
+    }
+})
+
+p.then((message)=>{
+    console.log('this is the reward' + message)
+
+}).catch((message)=>{
+    console.log('tis is error for' + message)
+})

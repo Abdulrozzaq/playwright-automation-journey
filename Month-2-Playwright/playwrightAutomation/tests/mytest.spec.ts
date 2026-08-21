@@ -7,3 +7,13 @@ test('has title', async({page}) => {
     await expect(page).toHaveTitle(/Playwright/);
 
 });
+
+
+test('has titile', async ({page}) => {
+
+    await page.goto('ttps://automationbookstore.dev/');
+
+    await expect(page).toHaveTitle(/Automation Bookstore/);
+
+
+});

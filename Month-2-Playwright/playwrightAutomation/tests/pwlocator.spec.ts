@@ -1,4 +1,4 @@
-import {test, expect} from "playwright/test"
+import {test, expect} from "@playwright/test"
 /*
 page.getByRole() to locate by explicit and implicit accessibility attributes.
 page.getByText() to locate by text content.

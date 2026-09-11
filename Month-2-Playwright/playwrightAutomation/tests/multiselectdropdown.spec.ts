@@ -1,6 +1,6 @@
 import {test,expect, Locator} from '@playwright/test'
 
-test('single  select dropdown', async ({page}) => {
+test('multi select dropdown', async ({page}) => {
 
     page.goto("https://testautomationpractice.blogspot.com/");
 
@@ -23,6 +23,18 @@ await expect(optiondropdown).toHaveCount(7);
 
 //3. check if an option is present in the dropdown 
 
+const alltext : string[] = (await optiondropdown.allTextContents()).map(input => input.trim());
+
+console.log(alltext);
+
+expect(alltext).toContain('white');
 
 
+
+//print option from the dropdown 
+
+for(const option of alltext){
+
+    console.log(option);
+}
 });

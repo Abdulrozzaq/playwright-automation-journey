@@ -32,11 +32,11 @@ test("Bootstrap hidden dropdown", async ({page}) => {
 
     console.log("print all the option");
 
-    for(let i =0; count<27;i++){
+    for(let i =0; i<count;i++){
         console.log(await option.nth(i).textContent());
     }
 
-    for(let i =0; count<27;i++){
+    for(let i =0;i<count;i++){
 
          const text = await option.nth(i).textContent();
 

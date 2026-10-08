@@ -33,5 +33,26 @@ test("verify chrome CPU load on dyanmc table", async ({page}) =>{
         }
 
 
+
+
+
+
+    /// step 2 
+
+
+    let chromeCPUtxt =await  page.locator("#chrome-cpu").innerText();
+
+    console.log("Chrome CPU text", chromeCPUtxt);
+
+    if((chromeCPUtxt).includes(chromeCPUtxt)){
+        console.log("Chrome cpu equals")
+
+    }
+    else{
+        console.log("Chrome does not equals")
+    }
+
+    expect(chromeCPUtxt).toContain(cpuload);
+
     await page.waitForTimeout(5000);
 });
